@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ContactWindow</class>
+ <widget class="QDialog" name="ContactWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" columnstretch="1,0">
+   <property name="sizeConstraint">
+    <enum>QLayout::SetDefaultConstraint</enum>
+   </property>
+   <item row="1" column="1">
+    <widget class="QLabel" name="LabelLastName">
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	font: 8pt &quot;IRANSans&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>نام خانوادگی : </string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLabel" name="LabelPhone">
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	font: 8pt &quot;IRANSans&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>تلفن : </string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLabel" name="LabelFirstName">
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	font: 8pt &quot;IRANSans&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>نام : </string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="LabelFirstNameView">
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	font: 8pt &quot;IRANSans&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="LabelLastNameView">
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="LabelPhoneView">
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="BtnClose">
+       <property name="styleSheet">
+        <string notr="true">QPushButton:pressed {
+     background-color:   rgb(102, 102, 102);
+	color: rgb(240, 240, 240);
+}
+QPushButton {
+     background-color:  rgb(240, 240, 240);
+	color: rgb(102, 102, 102);
+border: 1px solid  rgb(102, 102, 102);
+     border-radius: 5px;
+padding:6px;
+margin:0px;
+margin-left:10px;
+}
+
+QPushButton:disabled {
+	color: rgb(180, 180, 180);
+}</string>
+       </property>
+       <property name="text">
+        <string>بستن</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnDelete">
+       <property name="styleSheet">
+        <string notr="true">QPushButton:pressed {
+     background-color:   rgb(102, 102, 102);
+	color: rgb(240, 240, 240);
+}
+QPushButton {
+     background-color:  rgb(240, 240, 240);
+	color: rgb(102, 102, 102);
+border: 1px solid  rgb(102, 102, 102);
+     border-radius: 5px;
+padding:6px;
+margin:0px;
+margin-left:10px;
+}
+
+QPushButton:disabled {
+	color: rgb(180, 180, 180);
+}</string>
+       </property>
+       <property name="text">
+        <string>حذف</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnEdit">
+       <property name="styleSheet">
+        <string notr="true">QPushButton:pressed {
+     background-color:   rgb(102, 102, 102);
+	color: rgb(240, 240, 240);
+}
+QPushButton {
+     background-color:  rgb(240, 240, 240);
+	color: rgb(102, 102, 102);
+border: 1px solid  rgb(102, 102, 102);
+     border-radius: 5px;
+padding:6px;
+margin:0px;
+margin-left:10px;
+}
+
+QPushButton:disabled {
+	color: rgb(180, 180, 180);
+}</string>
+       </property>
+       <property name="text">
+        <string>ویرایش</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
